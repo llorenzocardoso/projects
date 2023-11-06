@@ -8,15 +8,14 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# ! FILL IN BELOW
-# ? folder to track e.g. Windows: "C:\\Users\\UserName\\Downloads"
-source_dir = "C:/Users/Lorenzo/Downloads"
-dest_dir_sfx = "C:/Users/Lorenzo/Downloads/sfx"
-dest_dir_music = "C:/Users/Lorenzo/Downloads/music"
-dest_dir_video = "C:/Users/Lorenzo/Downloads/videos"
-dest_dir_image = "C:/Users/Lorenzo/Downloads/images"
-dest_dir_documents = "C:/Users/Lorenzo/Downloads/documents"
-dest_dir_setups = "C:/Users/Lorenzo/Downloads/setup"
+# ? change the username "C:/Users/YOUR-USER-NAME-HERE/Downloads"
+source_dir = "C:/Users/YOUR-USER-NAME-HERE/Downloads"
+dest_dir_sfx = "C:/Users/YOUR-USER-NAME-HERE/Downloads/sfx"
+dest_dir_music = "C:/Users/YOUR-USER-NAME-HERE/Downloads/music"
+dest_dir_video = "C:/Users/YOUR-USER-NAME-HERE/Downloads/videos"
+dest_dir_image = "C:/Users/YOUR-USER-NAME-HERE/Downloads/images"
+dest_dir_documents = "C:/Users/YOUR-USER-NAME-HERE/Downloads/documents"
+dest_dir_setups = "C:/Users/YOUR-USER-NAME-HERE/Downloads/setup"
 
 # ? supported image types
 image_extensions = [".jpg", ".jpeg", ".jpe", ".jif", ".jfif", ".jfi", ".png", ".gif", ".webp", ".tiff", ".tif", ".psd", ".raw", ".arw", ".cr2", ".nrw", ".k25", ".bmp", ".dib", ".heif", ".heic", ".ind", ".indd", ".indt", ".jp2", ".j2k", ".jpf", ".jpf", ".jpx", ".jpm", ".mj2",".svg", ".svgz", ".ai", ".eps", ".ico"]
@@ -29,17 +28,14 @@ document_extensions = [".doc", ".docx", ".odt", ".pdf", ".xls", ".xlsx", ".ppt",
 # ? supported Setup types
 setup_extensions = [".exe"]
 
-
 def make_unique(dest, name):
     filename, extension = splitext(name)
     counter = 1
-    # * IF FILE EXISTS, ADDS NUMBER TO THE END OF THE FILENAME
     while exists(f"{dest}/{name}"):
         name = f"{filename}({str(counter)}){extension}"
         counter += 1
 
     return name
-
 
 def move_file(dest, entry, name):
     if exists(f"{dest}/{name}"):
@@ -49,10 +45,7 @@ def move_file(dest, entry, name):
         rename(oldName, newName)
     move(entry, dest)
 
-
 class MoverHandler(FileSystemEventHandler):
-    # ? THIS FUNCTION WILL RUN WHENEVER THERE IS A CHANGE IN "source_dir"
-    # ? .upper is for not missing out on files with uppercase extensions
     def on_modified(self, event):
         with scandir(source_dir) as entries:
             for entry in entries:
@@ -85,7 +78,7 @@ class MoverHandler(FileSystemEventHandler):
                 move_file(dest_dir_image, entry, name)
                 logging.info(f"Moved image file: {name}")
             
-    def check_setup_files(self, entry, name):  # * Checks all Image Files
+    def check_setup_files(self, entry, name):  # * Checks all Setup Files
         for setup_extesion in setup_extensions:
             if name.endswith(setup_extesion) or name.endswith(setup_extesion.upper()):
                 move_file(dest_dir_setups, entry, name)
@@ -97,7 +90,6 @@ class MoverHandler(FileSystemEventHandler):
                 move_file(dest_dir_documents, entry, name)
                 logging.info(f"Moved document file: {name}")
 
-# ! NO NEED TO CHANGE BELOW CODE
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(message)s',
