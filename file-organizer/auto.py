@@ -97,7 +97,6 @@ class MoverHandler(FileSystemEventHandler):
                 move_file(dest_dir_documents, entry, name)
                 logging.info(f"Moved document file: {name}")
 
-
 # ! NO NEED TO CHANGE BELOW CODE
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
