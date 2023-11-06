@@ -1,0 +1,52 @@
+[
+    {
+        "variavel": "preferencia",
+        "valor": "vegetariana",
+        "resultado": "Experimente alimentos ricos em proteinas vegetais, como lentilhas, feijao, quinoa, grao-de-bico, nozes e sementes."
+    },
+    {
+        "variavel": "preferencia",
+        "valor": "vegana",
+        "resultado": "Opte por uma dieta a base de plantas completa, incluindo feijoes, legumes, graos integrais, frutas e vegetais. Certifique-se de obter suplementos de vitamina B12, se necessario."
+    },
+    {
+        "variavel": "preferencia",
+        "valor": "padrao",
+        "resultado": "Mantenha uma dieta equilibrada, incluindo uma variedade de alimentos, como carnes magras, peixes, ovos, frutas, vegetais e graos integrais."
+    },
+    {
+        "variavel": "restricao",
+        "valor": "gluten",
+        "resultado": "Evite alimentos que contenham gluten, opte por opcoes sem gluten, como arroz, milho, quinoa, batata, e produtos certificados livres de gluten."
+    },
+    {
+        "variavel": "restricao",
+        "valor": "lactose",
+        "resultado": "Evite alimentos que contenham lactose, opte por alternativas livres de lactose, como leite de amendoa, leite de arroz, leite de soja, leite de coco e queijos sem lactose."
+    },
+    {
+        "variavel": "restricao",
+        "valor": "nenhuma",
+        "resultado": "Esteja atento a possiveis alergias e evite alimentos que possam causar reacoes alergicas, como nozes, amendoim, ovos, mariscos, e outros alergenos especificos."
+    },
+    {
+        "variavel": "restricao",
+        "valor": "soja",
+        "resultado": "Evite alimentos com soja, opte por alternativas livres de soja, como leite de amendoa, leite de coco, e tofu feito a partir de outros ingredientes como grao-de-bico."
+    },
+    {
+        "variavel": "meta",
+        "valor": "ganhar",
+        "resultado": "Aumente a ingestao de calorias saudaveis, incluindo uma mistura de carboidratos complexos e proteinas magras, e pratique exercicios de forca regularmente para promover o crescimento muscular."
+    },
+    {
+        "variavel": "meta",
+        "valor": "perder",
+        "resultado": "Reduza a ingestao de calorias e evite alimentos processados e ricos em acucares e gorduras saturadas. Em vez disso, concentre-se em alimentos ricos em fibras, proteinas magras e gorduras saudaveis, e mantenha uma rotina regular de exercicios aerobicos e treinamento de forca."
+    },
+    {
+        "variavel": "meta",
+        "valor": "manter",
+        "resultado": "Mantenha um equilibrio saudavel de calorias, obtendo uma variedade de nutrientes de todos os grupos alimentares. Pratique exercicios regularmente para sustentar o peso atual e promover a saude geral."
+    }
+]

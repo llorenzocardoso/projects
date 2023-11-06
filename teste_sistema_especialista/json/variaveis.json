@@ -1,0 +1,27 @@
+[
+    {
+        "nome": "preferencia",
+        "valores": [
+            "vegetariana",
+            "vegana",
+            "padrao"
+        ]
+    },
+    {
+        "nome": "restricao",
+        "valores": [
+            "soja",
+            "gluten",
+            "lactose",
+            "nenhuma"
+        ]
+    },
+    {
+        "nome": "meta",
+        "valores": [
+            "ganhar",
+            "perder",
+            "manter"
+        ]
+    }
+]
