@@ -8,14 +8,14 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# ? change the username "C:/Users/YOUR-USER-NAME-HERE/Downloads"
-source_dir = "C:/Users/YOUR-USER-NAME-HERE/Downloads"
-dest_dir_sfx = "C:/Users/YOUR-USER-NAME-HERE/Downloads/sfx"
-dest_dir_music = "C:/Users/YOUR-USER-NAME-HERE/Downloads/music"
-dest_dir_video = "C:/Users/YOUR-USER-NAME-HERE/Downloads/videos"
-dest_dir_image = "C:/Users/YOUR-USER-NAME-HERE/Downloads/images"
-dest_dir_documents = "C:/Users/YOUR-USER-NAME-HERE/Downloads/documents"
-dest_dir_setups = "C:/Users/YOUR-USER-NAME-HERE/Downloads/setup"
+# ? change the username "C:/Users/Lorenzo/Downloads"
+source_dir = "C:/Users/llore/Downloads"
+dest_dir_sfx = "C:/Users/llore/Downloads/sfx"
+dest_dir_music = "C:/Users/llore/Downloads/music"
+dest_dir_video = "C:/Users/llore/Downloads/videos"
+dest_dir_image = "C:/Users/llore/Downloads/images"
+dest_dir_documents = "C:/Users/llore/Downloads/documents"
+dest_dir_setups = "C:/Users/llore/Downloads/setup"
 
 # ? supported image types
 image_extensions = [".jpg", ".jpeg", ".jpe", ".jif", ".jfif", ".jfi", ".png", ".gif", ".webp", ".tiff", ".tif", ".psd", ".raw", ".arw", ".cr2", ".nrw", ".k25", ".bmp", ".dib", ".heif", ".heic", ".ind", ".indd", ".indt", ".jp2", ".j2k", ".jpf", ".jpf", ".jpx", ".jpm", ".mj2",".svg", ".svgz", ".ai", ".eps", ".ico"]
