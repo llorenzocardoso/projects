@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331791670386",
+    "project_id": "movie-app-flutter-a860d",
+    "storage_bucket": "movie-app-flutter-a860d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331791670386:android:bc6fce6c92a181a5edb6eb",
+        "android_client_info": {
+          "package_name": "com.example.app_filmes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDur-Fi_7tUJskJ29NTPsReqHkkEpR7thg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
