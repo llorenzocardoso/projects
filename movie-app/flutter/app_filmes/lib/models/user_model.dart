@@ -3,7 +3,4 @@ class UserModel {
 
   const UserModel({required this.email});
 
-
-
-
 }

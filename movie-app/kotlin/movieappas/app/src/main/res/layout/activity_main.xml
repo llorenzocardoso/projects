@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título centralizado no topo -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLIXFLIX"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Trending Movies -->
+        <TextView
+            android:id="@+id/trending_movies_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending movies"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trending_movies_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Top rated movies -->
+        <TextView
+            android:id="@+id/top_rated_movies_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top rated movies"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/top_rated_movies_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Upcoming movies -->
+        <TextView
+            android:id="@+id/upcoming_movies_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming movies"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcoming_movies_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</ScrollView>

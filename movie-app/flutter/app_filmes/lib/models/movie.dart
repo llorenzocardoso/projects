@@ -29,7 +29,4 @@ class Movie{
         voteAverage: json["vote_average"].toDouble(),
     );
   }
-
-
-
 }
