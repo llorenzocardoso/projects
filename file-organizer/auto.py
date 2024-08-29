@@ -8,7 +8,7 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# ? change the username "C:/Users/Lorenzo/Downloads"
+# ? change for your username "C:/Users/Lorenzo/Downloads"
 source_dir = "C:/Users/llore/Downloads"
 dest_dir_sfx = "C:/Users/llore/Downloads/sfx"
 dest_dir_music = "C:/Users/llore/Downloads/music"
