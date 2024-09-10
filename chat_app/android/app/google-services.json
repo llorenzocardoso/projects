@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030808563405",
+    "project_id": "chatapp-666b9",
+    "storage_bucket": "chatapp-666b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030808563405:android:143dbdfaa3a4165e80c384",
+        "android_client_info": {
+          "package_name": "com.lorenzocardoso.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8TtrIZQmEkgJ4QLGkvhk-3i4wTzfxjiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
